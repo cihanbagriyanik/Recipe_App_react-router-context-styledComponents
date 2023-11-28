@@ -1,6 +1,10 @@
 
 # Recipe App 
 
+## Expected Outcome
+
+![ezgif com-gif-maker](https://github.com/cihanbagriyanik/Recipe_App_react-router-context-styledComponents/assets/132518854/aa2f924c-a6c8-40ee-9088-2d11488dcec7)
+
 ## Description
 
 Project aims to create a Recipe App.
@@ -12,9 +16,9 @@ Project aims to create a Recipe App.
 ## Project Skeleton
 
 ```
-05 - Recipe App (folder)
+Recipe App (folder)
 |
-|----readme.md         # Given to the students (Definition of the project)
+|----readme.md 
 SOLUTION
 ├── public
 │     └── index.html
@@ -54,10 +58,6 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
-
-
-
 ## Objective
 
 Build a Recipe App using ReactJS.
@@ -92,10 +92,5 @@ Build a Recipe App using ReactJS.
 
 - Step 6: Add project gif to your project and README.md file.
 
-## Notes
-
-- You can add additional functionalities to your app.
-
-- [Assets Folder](./assets/)
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
