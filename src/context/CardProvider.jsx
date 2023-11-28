@@ -8,6 +8,9 @@ const CardProvider = ({ children }) => {
   const [card, setCard] = useState([]);
   const [query, setQuery] = useState([]);
   const [meal, setMeal] = useState([]);
+  const [name, setName] = useState(localStorage.getItem("username") || "");
+  const [pass, setPass] = useState(localStorage.getItem("password") || "");
+
 
   const APP_KEY = "3fec983fbe21158f8ae4bbfa8dc7a980";
   const APP_ID = "3c651bf4";
@@ -24,7 +27,7 @@ const CardProvider = ({ children }) => {
     }
   };
 
-  const values = { card, setCard, query, setQuery, meal, setMeal, getData };
+  const values = { card, setCard, query, setQuery, meal, setMeal, getData, name, setName, pass, setPass };
 
   return <CardContext.Provider value={values}>{children}</CardContext.Provider>;
 };

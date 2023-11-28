@@ -16,7 +16,7 @@ const myNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="d-flex justify-content-end flex-grow-1">
-            <MenuLink to="/">Home</MenuLink>
+            <MenuLink to="/home">Home</MenuLink>
             <MenuLink to="/about">About</MenuLink>
             <MenuLink to="/login">Login</MenuLink>
             <MenuLink to="/register">Register</MenuLink>
