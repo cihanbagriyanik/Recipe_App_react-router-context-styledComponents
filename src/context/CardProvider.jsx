@@ -11,7 +11,6 @@ const CardProvider = ({ children }) => {
   const [name, setName] = useState(localStorage.getItem("username") || "");
   const [pass, setPass] = useState(localStorage.getItem("password") || "");
 
-
   const APP_KEY = "3fec983fbe21158f8ae4bbfa8dc7a980";
   const APP_ID = "3c651bf4";
   const BASE_URL = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
@@ -27,7 +26,19 @@ const CardProvider = ({ children }) => {
     }
   };
 
-  const values = { card, setCard, query, setQuery, meal, setMeal, getData, name, setName, pass, setPass };
+  const values = {
+    card,
+    setCard,
+    query,
+    setQuery,
+    meal,
+    setMeal,
+    getData,
+    name,
+    setName,
+    pass,
+    setPass,
+  };
 
   return <CardContext.Provider value={values}>{children}</CardContext.Provider>;
 };
