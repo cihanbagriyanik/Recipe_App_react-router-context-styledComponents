@@ -22,7 +22,7 @@ const MyForm = () => {
               onChange={(e) => setQuery(e.target.value)}
             />
           </Form.Group>
-          <Buttonn variant="primary w-25 h-25" type="submit">
+          <Buttonn type="submit">
             Search
           </Buttonn>
           <Form.Group as={Col} controlId="meal">

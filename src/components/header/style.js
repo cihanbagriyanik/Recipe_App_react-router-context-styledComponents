@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button = styled.button`
+const Buttonn = styled.button`
   width: 100px;
   border: none;
   border-radius: 5px;
@@ -21,4 +21,4 @@ export const FormDiv = styled.div`
   
 `;
 
-export default Button;
+export default Buttonn;
