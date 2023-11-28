@@ -8,7 +8,7 @@ const myNavbar = () => {
   return (
     <MyNavbar expand="md" className="bg-body-tertiary">
       <Container fluid>
-        <Logo href="/">
+        <Logo href="/home">
           {" "}
           <Span>{"< Cihan / >"}</Span> Recipe App{" "}
         </Logo>

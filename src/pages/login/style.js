@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const LoginContainer = styled.div`
   /* resmin olduğu div */
-  background-image: url("https://picsum.photos/1600/900");
+  /* background-image: url("https://picsum.photos/1600/900"); */
+  background-color: #00adb5;
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;

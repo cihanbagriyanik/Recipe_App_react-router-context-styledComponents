@@ -1,11 +1,11 @@
-import React from "react";
-import { useCardContext } from "../../context/CardProvider";
+
+import CardProvider, { useCardContext } from "../../context/CardProvider";
 import { useNavigate } from "react-router-dom";
 import { MainCardDiv, CardH3, CardDiv, CardButton, CardImg } from "./style";
 
 const RecipeCard = () => {
   const navigate = useNavigate();
-  const { card } = useCardContext();
+  const { card } = useCardContext(CardProvider);
   // console.log(card);
   return (
     <MainCardDiv>

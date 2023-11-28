@@ -1,12 +1,12 @@
-import React from "react";
+
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import { useCardContext } from "../../context/CardProvider";
+import CardProvider, { useCardContext } from "../../context/CardProvider";
 import Buttonn, { FormDiv } from "./style";
 
 const MyForm = () => {
-  const { setQuery, setMeal, getData } = useCardContext();
+  const { setQuery, setMeal, getData } = useCardContext(CardProvider);
   return (
     <FormDiv>
       <Form

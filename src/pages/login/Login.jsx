@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+
 import {
   FormContainer,
   Header,
@@ -10,13 +10,13 @@ import {
 } from "./style";
 import mealSvg from "../../assets/meal.svg";
 import { useNavigate } from "react-router";
-import CardProvider from "../../context/CardProvider";
+import CardProvider, { useCardContext } from "../../context/CardProvider";
 
 const Login = () => {
   const navigate = useNavigate();
 
 
-  const { name, pass, setPass, setName } = useContext(CardProvider);
+  const { name, pass, setPass, setName } = useCardContext(CardProvider);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const Login = () => {
     <LoginContainer>
       <FormContainer>
         <StyledImg src={mealSvg} />
-        <Header>{"<Clarusway/>"}Recipe</Header>
+        <Header>{"< Cihan / >"}Recipe App</Header>
 
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput

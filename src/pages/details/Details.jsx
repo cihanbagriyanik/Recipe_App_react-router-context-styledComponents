@@ -1,5 +1,5 @@
-import React from "react";
-import { useCardContext } from "../../context/CardProvider";
+
+import CardProvider, { useCardContext } from "../../context/CardProvider";
 import { useLocation } from "react-router-dom";
 import DetailsMainDiv, {
   DetailsUnderDiv,
@@ -11,7 +11,7 @@ import DetailsMainDiv, {
 } from "./style";
 
 const Details = () => {
-  const { card } = useCardContext();
+  const { card } = useCardContext(CardProvider);
 
   const {
     state: { i },
