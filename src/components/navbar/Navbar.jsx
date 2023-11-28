@@ -8,7 +8,7 @@ const myNavbar = () => {
   return (
     <MyNavbar expand="md" className="bg-body-tertiary">
       <Container fluid>
-        <Logo href="/home">
+        <Logo href="/">
           {" "}
           <Span>{"< Cihan / >"}</Span> Recipe App{" "}
         </Logo>
@@ -16,7 +16,7 @@ const myNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="d-flex justify-content-end flex-grow-1">
-            <MenuLink to="/home">Home</MenuLink>
+            <MenuLink to="/">Home</MenuLink>
             <MenuLink to="/about">About</MenuLink>
             <MenuLink to="/login">Login</MenuLink>
             <MenuLink to="/register">Register</MenuLink>

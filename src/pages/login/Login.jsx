@@ -24,7 +24,7 @@ const Login = () => {
     localStorage.setItem("username", name);
     localStorage.setItem("password", pass);
 
-    navigate("/home");
+    navigate("/");
   };
 
   return (
